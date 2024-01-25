@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Video Catalog</title>
+    <link rel="stylesheet" href="catalogue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iK7ZF7a8+zugeFq4F63pgEUH5L/5eWvRYn1aAz/MIcNqO5qRGv1+8CC/WH" crossorigin="anonymous">
+</head>
+<body>
+  <h1>Explore the Mind, Ignite Inspiration: Dive into a World of Empowering Videos for Your Mental Well-being!</h1>
+<div class="catalog">
+    <div class="video" onclick="playVideo('rkZl2gsLUp4')">
+        <div class="thumbnail">
+            <img src="images/ted.jpg" alt="Video Thumbnail">
+            <div class="overlay">
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+        <h3>How to manage your mental health | Leon Taylor | TEDxClapham</h3>
+    </div>
+    <div class="video" onclick="playVideo('lJCUC0mRkPo')">
+        <div class="thumbnail">
+            <img src="images/sadhguru.jpg" alt="Video Thumbnail">
+            <div class="overlay">
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+        <h3>How to Remove Negative Thoughts? Sadhguru Jagadish Vasudev Answers</h3>
+    </div>
+
+    <div class="video" onclick="playVideo('CJIXbibQ0jI')">
+        <div class="thumbnail">
+            <img src="images/adrew.jpg" alt="Video Thumbnail">
+            <div class="overlay">
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+        <h3>Mental Health Toolkit: Tools to Bolster Your Mood & Mental Health</h3>
+    </div>
+    <div class="video" onclick="playVideo('v=j0_0O-FmLtc')">
+      <div class="thumbnail">
+          <img src="images/yoga.jpg" alt="Video Thumbnail">
+          <div class="overlay">
+              <i class="fas fa-play"></i>
+          </div>
+      </div>
+      <h3>10 Tips to Improve your Mental Health | Stress free</h3>
+  </div>
+  <div class="video" onclick="playVideo('v=9mPwQTiMSj8')">
+    <div class="thumbnail">
+        <img src="images/gad.jpg" alt="Video Thumbnail">
+        <div class="overlay">
+            <i class="fas fa-play"></i>
+        </div>
+    </div>
+    <h3>Generalized anxiety disorder (GAD) - causes, symptoms & treatment</h3>
+</div>
+
+    
+    <div class="video" onclick="playVideo('v=ZToicYcHIOU')">
+        <div class="thumbnail">
+            <img src="images/meditation.jpg" alt="Video Thumbnail">
+            <div class="overlay">
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+        <h3>Daily Calm | 10 Minute Mindfulness Meditation | Be Present</h3>
+    </div>
+    <!-- Add more videos as needed -->
+    <div class="video" onclick="playVideo('v=O-6f5wQXSu8')">
+      <div class="thumbnail">
+          <img src="images/medi.jpg" alt="Video Thumbnail">
+          <div class="overlay">
+              <i class="fas fa-play"></i>
+          </div>
+      </div>
+      <h3>10-Minute Meditation For Anxiety</h3>
+  </div>
+  <div class="video" onclick="playVideo('v=AETFvQonfV8')">
+    <div class="thumbnail">
+        <img src="images/chalisa.jpg" alt="Video Thumbnail">
+        <div class="overlay">
+            <i class="fas fa-play"></i>
+        </div>
+    </div>
+    <h3>Hanuman Chalisa</h3>
+</div>
+
+</div>
+<h2>Harmony for the Soul: Elevate Your Spirit with Motivational Melodies in Our Song Sanctuary!</h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7zNvXEjgmE1110slXAuZie?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<div id="videoPlayerModal" class="modal">
+    <span class="close" onclick="closeVideoPlayer()">&times;</span>
+    <iframe id="videoPlayer" width="800" height="450" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<script src="catalogue.js"></script>
+</body>
+</html>
