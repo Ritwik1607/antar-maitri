@@ -1,0 +1,36 @@
+/* CSS HEX */
+--parchment: #f2e6d6;
+--meteorite: #3c2168;
+--piper: #d66927;
+--zest: #e5771f;
+--napa: #ac9d8c;
+--soft-amber: #cfc0ae;
+--amethyst-smoke: #a398b4;
+--light-wisteria: #bb9adb;
+--sirocco: #6c7c7c;
+
+
+/* SCSS HEX */
+$parchment: #f2e6d6;
+$meteorite: #3c2168;
+$piper: #d66927;
+$zest: #e5771f;
+$napa: #ac9d8c;
+$soft-amber: #cfc0ae;
+$amethyst-smoke: #a398b4;
+$light-wisteria: #bb9adb;
+$sirocco: #6c7c7c;
+
+
+/* SCSS RGB */
+--parchment: rgba(242,230,214,1);
+--meteorite: rgba(60,33,104,1);
+--piper: rgba(214,105,39,1);
+--zest: rgba(229,119,31,1);
+--napa: rgba(172,157,140,1);
+--soft-amber: rgba(207,192,174,1);
+--amethyst-smoke: rgba(163,152,180,1);
+--light-wisteria: rgba(187,154,219,1);
+--sirocco: rgba(108,124,124,1);
+
+

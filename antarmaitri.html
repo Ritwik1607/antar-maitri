@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntarMaitri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        :root {
+            --parchment: #f2e6d6;
+            --meteorite: #3c2168;
+            --piper: #d66927;
+            --zest: #e5771f;
+            --napa: #ac9d8c;
+            --soft-amber: #cfc0ae;
+            --amethyst-smoke: #a398b4;
+            --light-wisteria: #bb9adb;
+            --sirocco: #6c7c7c;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            background-image: url("gym-girl.jpg");
+            background-size: 52%;
+            background-repeat: no-repeat;
+            background-position: top 32px right -36px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;    
+           padding: 5px;
+        }
+
+        .logo img {
+            width: 60px;
+            border-radius: 50%;
+            margin-left: 30px;
+            
+        }
+
+        .navbar {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 1s;
+        }
+
+        .navbar a:hover {
+            color: #f1c40f;
+            text-decoration: none;
+            transform: translateY(-3px);
+        }
+
+        .consult-btn,
+        .contact-btn {
+            background-color: #000;
+            color: #f1f1f1;
+            padding: 10px 20px;
+            border: 1px solid #666;
+            border-radius: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .consult-btn:hover,
+        .contact-btn:hover {
+            background-color: #c25c1c;
+        }
+
+        .container {
+            height: 80vh;
+            display: grid;
+            grid-template-columns: 35% 65%;
+            gap: 20px;
+            padding: 20px;
+            background-color: white;
+        }
+        .assessment img{
+            height: 250px;
+            margin-top: 20px;
+        }
+
+        .assessment,
+        .information {
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .assessment p {
+            background-color: var(--parchment);
+            color: var(--meteorite);
+            font-family: 'Grape Nuts', cursive;
+            font-size: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .assessment-btn {
+    height: 120px;
+    width: 300px;
+    font: 2em sans-serif;
+    background-image: url('images/assessment.gif');
+    background-size: cover; /* Ensure the background image covers the button */
+    color: #fff;
+    position: relative;
+    border-radius: 25px;
+    transition: all 0.8s ease-in-out;
+}
+
+.assessment-btn:hover {
+    height: 130px;
+    width: 350px;
+    font: 2.2em sans-serif;
+    color: #000;
+    position: relative;
+    border-radius: 27px;
+    background-image: url(images/AssesmentHover.gif);
+    background-size: cover; /* Ensure the background image covers the button */
+}
+
+.assessment{
+    display: grid;
+    grid-template-rows: 30% 60% 20%;
+    align-items: center;
+    justify-items: center;
+}
+        .information{
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Antar Maitri.jpg" alt="AntarMaitri Logo">
+            
+        </div>
+        <nav class="navbar">
+            <a href="antarmaitri.html">Home</a>
+            <a href="javascript:void(0);" onclick="loadPage('Articles.html')">Articles</a>
+            <a href="javascript:void(0);" onclick="loadPage('BMI_calculator.html')">BMI Calculator</a>
+            <a href="javascript:void(0);" onclick="loadPage('catalogue.html')">Services</a>
+            <a href="javascript:void(0);" onclick="loadPage('catalogue.html')">About Us</a>
+        </nav>
+        <div class="actions">
+            <button class="consult-btn">Consult Now</button>
+            <button class="contact-btn">Contact Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="assessment">
+            <img src="images/BackgroundImg.gif" alt="">
+            <p>"Embrace challenges as steps to your dreams. Your strength and resilience are your assets. Each small
+                step is a victory, a testament to your courage. Believe in your potential, create a story of triumph.
+                Keep moving forward with hope; your journey inspires others."</p>
+            <button class="assessment-btn"></button>
+        </div>
+        <div class="information">
+            <img src="images/HomeBG.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        function loadPage(page) {
+            // Fetch the content of the specified page
+            fetch(page)
+                .then(response => response.text())
+                .then(data => {
+                    // Set the content of the "information" div with the fetched data
+                    document.querySelector('.information').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading page:', error));
+        }
+        function calculateBMI() {
+            // Get input values
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+
+            // Check if inputs are valid
+            if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                alert('Please enter valid values for weight and height.');
+                return;
+            }
+
+            // Calculate BMI
+            const bmi = weight / Math.pow(height / 100, 2);
+
+            // Display result
+            const resultElement = document.getElementById('result');
+            resultElement.innerHTML = `<p>Your BMI is: ${bmi.toFixed(2)}</p>`;
+
+            // Interpret BMI category
+            let category = '';
+            if (bmi < 18.5) {
+                category = 'Underweight';
+            } else if (bmi < 24.9) {
+                category = 'Normal weight';
+            } else if (bmi < 29.9) {
+                category = 'Overweight';
+            } else {
+                category = 'Obese';
+            }
+
+            resultElement.innerHTML += `<p>Category: ${category}</p>`;
+
+            // Additional information based on BMI
+            if (bmi < 18.5) {
+                resultElement.innerHTML += '<p>Additional Information: Consider gaining weight for a healthier BMI.</p>';
+            } else if (bmi >= 25) {
+                resultElement.innerHTML += '<p>Additional Information: Consider maintaining a balanced diet and regular exercise for a healthier BMI.</p>';
+            }
+        }
+    </script>
+</body>
+
+</html>
