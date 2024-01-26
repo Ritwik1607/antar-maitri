@@ -5,6 +5,66 @@ body {
     width: 98vw;
 
 }
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 5px;
+    color: #000000;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+   padding: 5px;
+}
+
+.logo img {
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 30px;
+    
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+    text-decoration: none;
+    transform: translateY(-3px);
+}
+
+.consult-btn,
+.contact-btn {
+    background-color: #000;
+    color: #f1f1f1;
+    padding: 10px 20px;
+    border: 1px solid #666;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.consult-btn:hover,
+.contact-btn:hover {
+    background-color: #c25c1c;
+}
+
+
 
 header {
     display: flex;
