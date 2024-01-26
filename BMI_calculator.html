@@ -20,6 +20,22 @@
             --sirocco: #6c7c7c;
         }
 
+        h2{
+            text-align: center;
+            font-size: 3vh;
+            animation: strech 2s infinite linear;
+}
+
+@keyframes strech {
+    0%, 100% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.5);
+    }
+    
+}
         .bmi-calculator {
             max-width: 400px;
             margin: 50px auto;
@@ -60,8 +76,9 @@
 
 <body>
     <div class="information">
+        <h2 >BMI Calculator because <br><strong> "A Healthy Mind Lives In A Healthy Body"</strong></h2>
     <div class="bmi-calculator">
-        <h2>BMI Calculator</h2>
+        <h3>BMI Calculator</h3>
         <form id="bmi-form">
         
             <label for="weight">Weight (kg):</label>
