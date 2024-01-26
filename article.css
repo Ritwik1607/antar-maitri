@@ -9,7 +9,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     padding: 5px;
     color: #000000;
     z-index: 1000;
