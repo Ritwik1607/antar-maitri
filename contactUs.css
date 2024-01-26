@@ -1,0 +1,75 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: #ff8000;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact {
+    display: inline-block;
+    font-size: 24px;
+    animation: waveAnimation 2s infinite linear;
+}
+
+@keyframes waveAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+}
+
+.content{
+    width: 100vw;
+    padding:auto  4vw auto 4vw;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+}
+
+.contact-info{
+    display: grid;
+    grid-template-rows: 65% 35%;
+ 
+    height: 50vh;
+}
+.photo img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 30vh;
+    border-radius:50% ;
+    border: 1px solid rgb(3, 242, 255);
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a img{
+    height: 10vh;
+    padding: 0%;
+    border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid rgb(3, 242, 255);
+}
+
