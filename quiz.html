@@ -112,7 +112,48 @@
             transition: fade in 0.5s;
         }
        
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+   padding: 5px;
+}
+
+.logo img {
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 30px;
+    
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+    text-decoration: none;
+    transform: translateY(-3px);
+}
 
 
         
