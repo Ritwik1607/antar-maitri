@@ -20,6 +20,7 @@ body {
     background-size: 52%;
     background-repeat: no-repeat;
     background-position: top 32px right -36px;
+    height: 100vh;
 }
 
 header {
@@ -35,15 +36,15 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    justify-content: center;    
-   padding: 5px;
+    justify-content: center;
+    padding: 5px;
 }
 
 .logo img {
     width: 60px;
     border-radius: 50%;
     margin-left: 30px;
-    
+
 }
 
 .navbar {
@@ -89,15 +90,16 @@ header {
     padding: 20px;
     background-color: white;
 }
-.assessment img{
-    height: 250px;
+
+.assessment img {
+    height: 20vh;
     margin-top: 20px;
 }
 
 .assessment,
 .information {
-    padding: 20px;
-    border-radius: 10px;
+    padding: 2vh;
+    border-radius: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,41 +110,45 @@ header {
     background-color: var(--parchment);
     color: var(--meteorite);
     font-family: 'Grape Nuts', cursive;
-    font-size: 25px;
-    padding: 20px;
-    border-radius: 10px;
+    font-size: 3.2vh;
+    padding: 2vh;
+    border-radius: 2hv;
     text-align: center;
+    height: 20vh;
 }
 
 .assessment-btn {
-height: 120px;
-width: 300px;
-font: 2em sans-serif;
-background-image: url('images/assessment.gif');
-background-size: cover; /* Ensure the background image covers the button */
-color: #fff;
-position: relative;
-border-radius: 25px;
-transition: all 0.8s ease-in-out;
+    height: 15vh;
+    width: 20vw;
+    font: 2em sans-serif;
+    background-image: url('images/assessment.gif');
+    background-size: cover;
+    /* Ensure the background image covers the button */
+    color: #fff;
+    position: relative;
+    border-radius: 25px;
+    transition: all 0.8s ease-in-out;
 }
 
 .assessment-btn:hover {
-height: 130px;
-width: 350px;
-font: 2.2em sans-serif;
-color: #000;
-position: relative;
-border-radius: 27px;
-background-image: url(images/AssesmentHover.gif);
-background-size: cover; /* Ensure the background image covers the button */
+    height: 18vh;
+    width: 24vw;
+    font: 2.2em sans-serif;
+    color: #000;
+    position: relative;
+    border-radius: 27px;
+    background-image: url(images/AssesmentHover.gif);
+    background-size: cover;
+    /* Ensure the background image covers the button */
 }
 
-.assessment{
-display: grid;
-grid-template-rows: 30% 60% 20%;
-align-items: center;
-justify-items: center;
+.assessment {
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
+    align-items: center;
+    justify-items: center;
 }
-.information{
+
+.information {
     color: #000;
 }
